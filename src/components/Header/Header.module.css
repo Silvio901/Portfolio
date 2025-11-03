@@ -1,0 +1,86 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(ellipse at bottom, #0a192f 0%, #000000 100%);
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Centraliza o conjunto (logo + nav) */
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+/* Portfólio acima, centralizado */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f7e600;
+  text-shadow: 0 0 10px #f7e600;
+}
+
+/* Links centralizados */
+.navList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.navList a:hover {
+  color: #f7e600;
+  text-shadow: 0 0 8px #f7e600;
+}
+
+/* Hero (parte de baixo intacta) */
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  color: #f7e600;
+  text-shadow: 0 0 15px #f7e600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #a9b2c3;
+  margin-bottom: 40px;
+}
+
+.cta {
+  display: inline-block;
+  background: #f7e600;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #fff700;
+  transform: scale(1.05);
+}

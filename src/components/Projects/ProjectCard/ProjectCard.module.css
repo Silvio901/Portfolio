@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.card {
+  position: relative;
+  background: linear-gradient(145deg, #0a0a0a, #111);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1.2s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  z-index: 2;
+}
+
+/* ✨ Brilho de energia animado ao redor */
+.glow {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 15px;
+  background: linear-gradient(
+    60deg,
+    #00ffff,
+    #ff00ff,
+    #ffe81f,
+    #00ffff
+  );
+  background-size: 400% 400%;
+  filter: blur(8px);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: glowMove 8s linear infinite;
+}
+
+.card:hover .glow {
+  opacity: 1;
+}
+
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🪐 Imagem do projeto */
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 Título */
+.title {
+  color: #ffe81f;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px #ffe81f, 0 0 20px #ffd700;
+  position: relative;
+  z-index: 2;
+}
+
+/* 📜 Descrição */
+.description {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* ⚙️ Tecnologias */
+.techList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+}
+
+.techList li {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  color: #00ffff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.techList li:hover {
+  background: #00ffff;
+  color: #000;
+}
+
+/* 🚀 Link de ação */
+.link {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffe81f, #00ffff);
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #ffe81f;
+}
+
+/* ✨ Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+  .image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .techList {
+    flex-direction: column;
+    align-items: center;
+  }
+  .link {
+    width: 80%;
+  }
+}

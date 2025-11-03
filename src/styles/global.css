@@ -1,0 +1,10 @@
+:root {
+    --bg-color: #000;
+    --accent: #00FFFF;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: #fff;
+}

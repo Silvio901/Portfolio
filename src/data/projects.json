@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce React App",
+    "description": "Uma aplicação full-stack com React e Node.js. Inclui autenticação e integração com API REST.",
+    "technologies": ["React", "Node.js", "MongoDB"],
+    "link": "https://github.com/seuusuario/ecommerce-react",
+    "image": "/assets/projects/ecommerce-react.png"
+  },
+  {
+    "id": 2,
+    "title": "Dashboard de Análise de Dados",
+    "description": "Dashboard responsivo para visualização de dados consumindo API externa via Axios.",
+    "technologies": ["React", "Axios", "Chart.js"],
+    "link": "https://github.com/seuusuario/dashboard-analytics",
+    "image": "/assets/projects/dashboard.png"
+  },
+  {
+    "id": 3,
+    "title": "Blog Pessoal com CMS",
+    "description": "Blog pessoal com painel administrativo e API REST para posts e comentários.",
+    "technologies": ["React", "Node.js", "MySQL"],
+    "link": "https://github.com/seuusuario/blog-cms",
+    "image": "/assets/projects/blog.png"
+  }
+]

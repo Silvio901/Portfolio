@@ -1,0 +1,88 @@
+.contact {
+  position: relative;
+  background: radial-gradient(circle at 20% 20%, #0b0c1a, #000);
+  color: #00eaff;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.contact h2 {
+  font-size: 2em;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.contact p {
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+input,
+textarea {
+  background: #111;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px #00eaff;
+}
+
+button {
+  background: linear-gradient(90deg, #00eaff, #0077ff);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0077ff, #00eaff);
+}
+
+button.sent {
+  background: #00eaff;
+  color: #000;
+}
+
+.error {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
+
+.stars, .stars2, .stars3 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #00eaff;
+  animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-2000px); }
+}
