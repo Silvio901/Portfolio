@@ -94,7 +94,7 @@ Salve e recarregue a página
 
 bash
 # 1️⃣ Clone este repositório
-git clone https://github.com/seuusuario/portfolio-react.git
+git clone https://github.com/Silvio901/Portfolio
 
 # 2️⃣ Acesse a pasta
 cd portfolio-react
