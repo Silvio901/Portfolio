@@ -120,9 +120,9 @@ npm run deploy
 
 🧑‍🚀 Autor
 Silvio Junior
-📧 [seuemail@exemplo.com]
+📧 [silviojunior901@gmail.com]
 🌐 https://seuportfólio.vercel.app
-💼 LinkedIn | GitHub
+💼 LinkedIn [https://www.linkedin.com/in/silvio-junior-dev/]| GitHub [https://github.com/Silvio901]
 
 “A tecnologia é a ponte entre o sonho e a realização — e cada linha de código é um passo nessa jornada.”
 — Silvio Junior
