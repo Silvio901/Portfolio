@@ -74,12 +74,12 @@ Os projetos são carregados dinamicamente a partir do arquivo projects.json.
 Cada projeto inclui:
 
 json
+
 {
   "id": 1,
   "title": "Meu Projeto React",
   "description": "Aplicação web moderna com integração de API.",
   "image": "/assets/imgs/projeto1.png",
-  "url": "https://meusite.vercel.app"
 }
 
 📦 Para adicionar um novo projeto:
